@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show the Life Cycle"/>
                                 <connections>
-                                    <segue destination="wJe-4B-EmY" kind="show" id="1oa-EF-j11"/>
+                                    <segue destination="wJe-4B-EmY" kind="show" identifier="show life cycle" id="1oa-EF-j11"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,9 +52,8 @@
                                     <segue destination="cDp-WQ-3P0" kind="show" id="aQG-Nl-mfo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nothing has happened" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlQ-iF-wEh">
-                                <rect key="frame" x="110" y="103" width="173" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing has happened yet" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlQ-iF-wEh">
+                                <rect key="frame" x="12" y="103" width="369" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,10 +61,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mAW-RG-1Fa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JlQ-iF-wEh" firstAttribute="leading" secondItem="mAW-RG-1Fa" secondAttribute="leading" constant="12" id="aau-4l-jy4"/>
+                            <constraint firstItem="mAW-RG-1Fa" firstAttribute="trailing" secondItem="JlQ-iF-wEh" secondAttribute="trailing" constant="12" id="byu-Qg-TVf"/>
+                            <constraint firstItem="JlQ-iF-wEh" firstAttribute="top" secondItem="mAW-RG-1Fa" secondAttribute="top" id="upW-Gw-2UY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="86Y-4p-Kj3"/>
                     <connections>
-                        <outlet property="MiddleLabel" destination="JlQ-iF-wEh" id="yUg-bE-Ugd"/>
+                        <outlet property="Lable" destination="JlQ-iF-wEh" id="czC-Lh-6aT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpN-tg-LWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

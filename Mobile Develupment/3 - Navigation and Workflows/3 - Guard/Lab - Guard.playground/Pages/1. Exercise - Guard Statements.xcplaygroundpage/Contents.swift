@@ -15,10 +15,12 @@ func calculateArea(x: Double, y: Double) -> Double? {
 print(calculateArea(x: 2.5, y: 5.2))
 //:  Create a function called `add` that takes two optional integers as parameters and returns an optional integer. You should use one `guard` statement to unwrap both optional parameters, returning `nil` in the `guard` body if one or both of the parameters doesn't have a value. If both parameters can successfully be unwrapped, return their sum. Call the function once with non-`nil` numbers and once with at least one parameter being `nil`.
 func add(_num1:Int?, _num2: Int?) -> Int? {
-    guard  _num2 != nil && _num1 != nil else {
+    guard let num2 = _num2, let num1 = _num1 else {
         return nil
     }
-    var result = _num1! + _num2!
+    //guard  _num2 != nil && _num1 != nil else {
+        //return nil
+    var result = num1 + num2
     return result
 }
 print(add(_num1: 5, _num2: 7))
@@ -48,8 +50,9 @@ func createUser() -> User? {
         return nil
     }
     let firstUser = User(firstName: fristNameUnwraped, lastName: lastNameUnwraped, age: ageTextUnwraped)
+    
     return firstUser
-    print(firtsUser)
+    print(firstUser)
 }
 
 

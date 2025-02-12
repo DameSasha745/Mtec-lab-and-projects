@@ -19,7 +19,7 @@ struct Workout {
         }
         self.startTime = startTime
         self.endTime = endTime
-        return
+        
     }
 }
 /*:
@@ -39,13 +39,21 @@ foodTextField.text = "Banana"
 caloriesTextField.text = "23"
 
 func logFood() -> Food? {
-    guard let foodTextUnwraped = foodTextField, let caloriesTextUnwraped = caloriesTextField else {
-        init(foodTextField: String, caloriesTextField: String) {
-            self.food
-        }
+    guard let foodTextUnwraped = foodTextField.text, let caloriesTextUnwrapped = caloriesTextField.text else {
+        
+        return nil
     }
+    guard let calories: Int = Int(caloriesTextUnwrapped) else {
+        return nil
+    }
+    return Food(name: foodTextUnwraped, calories: calories)
+}
 //:  Call the function you made above and capture the return value. Unwrap the `Food` object with standard optional binding and print a statement about the food using each of its properties. Go back and change the text in `caloriesTextField` to a string that cannot be converted into a number. What happens in that case?
+var food = logFood()
 
+print(food?.name)
+
+print(food?.calories)
 
 /*:
  _Copyright © 2023 Apple Inc._

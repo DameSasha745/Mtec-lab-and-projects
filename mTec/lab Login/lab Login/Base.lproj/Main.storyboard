@@ -34,7 +34,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log in"/>
                                 <connections>
-                                    <segue destination="mg9-LG-zwK" kind="show" id="Cz3-qH-9kl"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bA-Nc-S3H"/>
+                                    <segue destination="mg9-LG-zwK" kind="show" identifier="loginButton" id="Cz3-qH-9kl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhD-Jj-bJQ">
@@ -42,12 +43,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Username"/>
+                                <connections>
+                                    <action selector="forgotUsernameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1s-cv-C2D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa8-dw-HH3">
                                 <rect key="frame" x="216" y="405" width="152" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password"/>
+                                <connections>
+                                    <action selector="forgotPasswordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8LD-Bj-1Rq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -55,7 +62,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Log in" largeTitleDisplayMode="always" id="JGw-Be-CNy"/>
                     <connections>
+                        <outlet property="forgotPasswordButton" destination="Sa8-dw-HH3" id="zuv-X4-Osi"/>
+                        <outlet property="forgotUsernameButton" destination="WhD-Jj-bJQ" id="Tik-be-h6R"/>
                         <outlet property="userName" destination="FKp-me-kba" id="CLH-N6-gPs"/>
+                        <segue destination="mg9-LG-zwK" kind="show" identifier="loginToLanding" id="L52-5f-X2b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,6 +107,9 @@
             <point key="canvasLocation" x="130.76923076923077" y="-27.014218009478672"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="L52-5f-X2b"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
