@@ -8,12 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    enum Operator: String {
+        case addition = "+"
+        case subtraction = "-"
+        case multiplication = "x"
+        case division = "÷"
+    }
     
     @IBOutlet var textLabel: UILabel!
     
     var currentText: String = ""
     var previousText: String = ""
-    var currentOP: String?
+    var currentOP: Operator?
     
     
     override func viewDidLoad() {
@@ -34,11 +40,12 @@ class ViewController: UIViewController {
                 
 
             case "÷", "x", "+", "-":
+                guard let newOperator = Operator(rawValue: senderButton) else { return }
                 if !currentText.isEmpty {
                     previousText = currentText
                     currentText = ""
                 }
-                currentOP = senderButton
+                currentOP = newOperator
                 textLabel.text = currentText
                 
             case ".":
@@ -48,7 +55,7 @@ class ViewController: UIViewController {
                 }
                 
             case "=":
-                if let Operator = currentOP, !previousText.isEmpty, !currentText.isEmpty {
+                if let localCurrentOperator = currentOP, !previousText.isEmpty, !currentText.isEmpty {
                     let total = caluculateResult()
                     textLabel.text = "\(total)"
                     previousText = "\(total)"
@@ -73,18 +80,15 @@ class ViewController: UIViewController {
             }
             
             switch operatorSymbol {
-            case "+":
+            case .addition:
                 return previous + current
-            case "-":
+            case .subtraction:
                 return previous - current
-            case "x":
+            case .multiplication:
                 return previous * current
-            case "÷":
+            case .division:
                 return previous / current
-            default:
-                return 0
         }
-            
-            
     }
+    
 }
