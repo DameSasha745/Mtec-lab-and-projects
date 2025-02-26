@@ -31,6 +31,9 @@ class resultsVC: UIViewController {
         calculatePersonalityResult()
         
     }
+    
+    @IBAction func doneCancelToExit(_ sender: Any) {
+    }
         func calculatePersonalityResult() {
             let frequencyOfAnswers = responses.reduce(into: [:]) { (counts, answer) in
                 counts[answer.type, default: 0] += 1
