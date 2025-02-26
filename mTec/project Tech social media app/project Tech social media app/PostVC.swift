@@ -1,24 +1,18 @@
 //
-//  LandingPageVC.swift
-//  lab validationApp
+//  PostVC.swift
+//  project Tech social media app
 //
-//  Created by Sasha Cummings on 2/25/25.
+//  Created by Sasha Cummings on 2/24/25.
 //
 
 import UIKit
 
-class LandingPageVC: UIViewController {
+class PostVC: UIViewController {
 
-    var shouldShow = true
-    
-//    var landingpage: LandingPageVC!
-//    
-    @IBOutlet var conformation: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        conformation.isHidden = !shouldShow
 
+        // Do any additional setup after loading the view.
     }
     
 

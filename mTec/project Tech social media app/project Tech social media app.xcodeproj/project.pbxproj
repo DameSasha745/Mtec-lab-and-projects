@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A3A6A9372D6D7482005417AA /* Exceptions for "project Tech social media app" folder in "project Tech social media app" target */ = {
+		A3A6A9CF2D6E20DB005417AA /* Exceptions for "project Tech social media app" folder in "project Tech social media app" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,7 +43,7 @@
 		A3A6A9112D6D7482005417AA /* project Tech social media app */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A3A6A9372D6D7482005417AA /* Exceptions for "project Tech social media app" folder in "project Tech social media app" target */,
+				A3A6A9CF2D6E20DB005417AA /* Exceptions for "project Tech social media app" folder in "project Tech social media app" target */,
 			);
 			path = "project Tech social media app";
 			sourceTree = "<group>";

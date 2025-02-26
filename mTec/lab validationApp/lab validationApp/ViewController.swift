@@ -16,8 +16,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var loginButton: UIStackView!
     
-    @IBOutlet var userNameLabel: UILabel!
-    
     @IBOutlet var forgotUserName: UIButton!
     
     @IBOutlet var forgotPassword: UIButton!
@@ -29,13 +27,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func forgotUserNameButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "loginPageSegue", sender: sender)
+        performSegue(withIdentifier: "loginButtonSegue", sender: sender)
     }
     
     @IBAction func forgotPasswordButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "loginPageSegue", sender: sender)
+        performSegue(withIdentifier: "loginButtonSegue", sender: sender)
+       
     }
     @IBAction func loginButtonTapped(_ sender: UIButton) {
+        
         let userName = userName.text ?? ""
         let password = password.text ?? ""
         
@@ -54,10 +54,12 @@ class ViewController: UIViewController {
         
         if sender == forgotPassword {
             segue.destination.navigationItem.title = "Forgot Password!"
+            let landingPageVC = segue.destination as? LandingPageVC
+            landingPageVC?.shouldShow = false
         } else if sender == forgotUserName {
             segue.destination.navigationItem.title = "Forgot Username!"
-        } else{
-            segue.destination.navigationItem.title = "Welcome!"
+            let landingPageVC = segue.destination as? LandingPageVC
+            landingPageVC?.shouldShow = false
         }
     }
     
