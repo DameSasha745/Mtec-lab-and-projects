@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HMC-q0-rov">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About me-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_About_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdv-BG-OBi">
+                                <rect key="frame" x="16" y="109" width="358" height="101.66666666666669"/>
+                                <string key="text">My name is Sasha Cummings and I am a current student at MTech. I love anything that has to do with the middevile era and fire birds. I also am self employed and make 3D printed toys and D &amp; D turrain and accessories</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-UU-RLb">
+                                <rect key="frame" x="156" y="77" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle" translatesAutoresizingMaskIntoConstraints="NO" id="I5b-Zq-kUc">
+                                <rect key="frame" x="63" y="248.66666666666663" width="267" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="TmJ-9i-SaX"/>
+                                    <constraint firstAttribute="height" constant="235" id="mol-cr-iDE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my store 2" translatesAutoresizingMaskIntoConstraints="NO" id="wpV-5P-KWn">
+                                <rect key="frame" x="76.666666666666686" y="500" width="240" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="Trk-iW-ZCa"/>
+                                    <constraint firstAttribute="width" constant="240" id="d5t-5u-KcT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firebird" translatesAutoresizingMaskIntoConstraints="NO" id="NV4-y2-UTS">
+                                <rect key="frame" x="118" y="634" width="157" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="BqL-Hr-F2K"/>
+                                    <constraint firstAttribute="height" constant="135" id="ppA-xC-K6u"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j1k-UU-RLb" secondAttribute="trailing" constant="163" id="0dQ-5A-OQI"/>
+                            <constraint firstItem="wpV-5P-KWn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2qn-fU-YUB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sdv-BG-OBi" secondAttribute="trailing" constant="19" id="86m-rC-U2a"/>
+                            <constraint firstItem="NV4-y2-UTS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Oi3-0A-6vm"/>
+                            <constraint firstItem="I5b-Zq-kUc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pt1-x7-0Yk"/>
+                            <constraint firstItem="Sdv-BG-OBi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TTu-GL-NTz"/>
+                            <constraint firstItem="Sdv-BG-OBi" firstAttribute="top" secondItem="j1k-UU-RLb" secondAttribute="bottom" constant="11" id="gta-kd-U3p"/>
+                            <constraint firstItem="j1k-UU-RLb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="jov-bv-MGF"/>
+                            <constraint firstItem="wpV-5P-KWn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="138.5" id="pFx-Uf-5xX"/>
+                            <constraint firstItem="j1k-UU-RLb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="qfU-wK-mQt"/>
+                            <constraint firstItem="I5b-Zq-kUc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="udi-xT-rRs"/>
+                            <constraint firstItem="NV4-y2-UTS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xhA-og-2lg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About me" image="book" catalog="system" id="7ed-wx-c5w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+        <!--My family-->
+        <scene sceneID="LcA-9j-Qcq">
+            <objects>
+                <viewController id="eMF-ES-6Up" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EIh-VI-1a1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2fn-Mf-ICd">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="My family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJb-4n-wRa">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="142"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLj-Hu-Vzc">
+                                        <rect key="frame" x="0.0" y="142" width="393" height="142"/>
+                                        <string key="text">I am # 2 of 5  in my  imediate family and I am married to my husband Jayden and have one little one, Adrian who is  going to be turning 3 this year.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyFamily" translatesAutoresizingMaskIntoConstraints="NO" id="Tto-xe-we8">
+                                        <rect key="frame" x="0.0" y="284" width="393" height="142"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me and my baby boy" translatesAutoresizingMaskIntoConstraints="NO" id="GP8-1I-Hi1">
+                                        <rect key="frame" x="0.0" y="426" width="393" height="142"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my hubby and I" translatesAutoresizingMaskIntoConstraints="NO" id="L8Y-oJ-NxL">
+                                        <rect key="frame" x="0.0" y="568" width="393" height="142"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XJb-4n-wRa" firstAttribute="width" secondItem="2fn-Mf-ICd" secondAttribute="width" id="BKh-tq-8qI"/>
+                                    <constraint firstItem="LLj-Hu-Vzc" firstAttribute="width" secondItem="2fn-Mf-ICd" secondAttribute="width" id="H8s-N9-SL2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OFP-Vn-k7n"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="OFP-Vn-k7n" firstAttribute="top" secondItem="2fn-Mf-ICd" secondAttribute="top" id="6eM-5M-ZBa"/>
+                            <constraint firstItem="2fn-Mf-ICd" firstAttribute="leading" secondItem="OFP-Vn-k7n" secondAttribute="leading" id="HfT-5h-ZIh"/>
+                            <constraint firstAttribute="trailing" secondItem="2fn-Mf-ICd" secondAttribute="trailing" id="J9V-Mt-Giq"/>
+                            <constraint firstItem="OFP-Vn-k7n" firstAttribute="bottom" secondItem="2fn-Mf-ICd" secondAttribute="bottom" id="VxH-AA-NiQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My family" image="homekit" catalog="system" id="OO0-qJ-bZe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbh-Cx-0pp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.7022900763359" y="-27.464788732394368"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="QV3-7V-AVu">
+            <objects>
+                <viewController id="bMv-LA-kci" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bzV-h9-oqy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="diy-RJ-CBf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Hobbies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oQ-ee-7Kz">
+                                        <rect key="frame" x="151" y="0.0" width="91" height="142"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exL-2i-rRH">
+                                        <rect key="frame" x="5.3333333333333428" y="142" width="382.66666666666663" height="142"/>
+                                        <string key="text">I love to draw, exploring the outdoors and  fantasy renicance theamed  books. I also love sowing, beeding purling and exploreing new ways to make and creating things. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinpurse" translatesAutoresizingMaskIntoConstraints="NO" id="f2v-Gf-yjM">
+                                        <rect key="frame" x="0.0" y="284" width="393" height="142"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alanna-quartet" translatesAutoresizingMaskIntoConstraints="NO" id="4M2-yV-d9W">
+                                        <rect key="frame" x="0.0" y="426" width="393" height="142"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curcut" translatesAutoresizingMaskIntoConstraints="NO" id="YWk-qX-SEX">
+                                        <rect key="frame" x="0.0" y="568" width="393" height="142"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WcP-oS-3dC"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="diy-RJ-CBf" firstAttribute="bottom" secondItem="WcP-oS-3dC" secondAttribute="bottom" id="25N-rK-nCn"/>
+                            <constraint firstItem="diy-RJ-CBf" firstAttribute="top" secondItem="WcP-oS-3dC" secondAttribute="top" id="KbF-WD-y6F"/>
+                            <constraint firstItem="diy-RJ-CBf" firstAttribute="trailing" secondItem="WcP-oS-3dC" secondAttribute="trailing" id="U3t-lc-pAp"/>
+                            <constraint firstItem="diy-RJ-CBf" firstAttribute="leading" secondItem="WcP-oS-3dC" secondAttribute="leading" id="n7o-LD-ey9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="pencil" catalog="system" id="Tnj-lM-idr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbk-QU-IZd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2486.2595419847326" y="-27.464788732394368"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OPw-x7-gOB">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HMC-q0-rov" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="arM-Aq-cjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="barTintColor" systemColor="labelColor"/>
+                        <color key="selectedImageTintColor" systemColor="tableCellBlueTextColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="HFE-Ac-gwR"/>
+                        <segue destination="eMF-ES-6Up" kind="relationship" relationship="viewControllers" id="ZOr-5j-aFu"/>
+                        <segue destination="bMv-LA-kci" kind="relationship" relationship="viewControllers" id="j5S-zv-ceY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0eS-bo-4GO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MyFamily" width="1762" height="1188"/>
+        <image name="alanna-quartet" width="640" height="260"/>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="castle" width="700" height="700"/>
+        <image name="coinpurse" width="3024" height="4032"/>
+        <image name="curcut" width="3024" height="4032"/>
+        <image name="firebird" width="500" height="500"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="me and my baby boy" width="871" height="1936"/>
+        <image name="my hubby and I" width="3024" height="4032"/>
+        <image name="my store 2" width="7654" height="3758"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tableCellBlueTextColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
