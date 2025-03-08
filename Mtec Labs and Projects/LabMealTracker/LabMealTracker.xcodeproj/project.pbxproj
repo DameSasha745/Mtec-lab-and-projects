@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		A343B1B32D7A08A00029EFA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A343B1942D7A089F0029EFA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A343B19B2D7A089F0029EFA4;
+			remoteInfo = LabMealTracker;
+		};
+		A343B1BD2D7A08A00029EFA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A343B1942D7A089F0029EFA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A343B19B2D7A089F0029EFA4;
+			remoteInfo = LabMealTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A343B19C2D7A089F0029EFA4 /* LabMealTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabMealTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A343B1B22D7A08A00029EFA4 /* LabMealTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabMealTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A343B1BC2D7A08A00029EFA4 /* LabMealTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabMealTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A343B1C42D7A08A00029EFA4 /* Exceptions for "LabMealTracker" folder in "LabMealTracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A343B19B2D7A089F0029EFA4 /* LabMealTracker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A343B19E2D7A089F0029EFA4 /* LabMealTracker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A343B1C42D7A08A00029EFA4 /* Exceptions for "LabMealTracker" folder in "LabMealTracker" target */,
+			);
+			path = LabMealTracker;
+			sourceTree = "<group>";
+		};
+		A343B1B52D7A08A00029EFA4 /* LabMealTrackerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LabMealTrackerTests;
+			sourceTree = "<group>";
+		};
+		A343B1BF2D7A08A00029EFA4 /* LabMealTrackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LabMealTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A343B1992D7A089F0029EFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A343B1AF2D7A08A00029EFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A343B1B92D7A08A00029EFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A343B1932D7A089F0029EFA4 = {
+			isa = PBXGroup;
+			children = (
+				A343B19E2D7A089F0029EFA4 /* LabMealTracker */,
+				A343B1B52D7A08A00029EFA4 /* LabMealTrackerTests */,
+				A343B1BF2D7A08A00029EFA4 /* LabMealTrackerUITests */,
+				A343B19D2D7A089F0029EFA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A343B19D2D7A089F0029EFA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A343B19C2D7A089F0029EFA4 /* LabMealTracker.app */,
+				A343B1B22D7A08A00029EFA4 /* LabMealTrackerTests.xctest */,
+				A343B1BC2D7A08A00029EFA4 /* LabMealTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A343B19B2D7A089F0029EFA4 /* LabMealTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A343B1C52D7A08A00029EFA4 /* Build configuration list for PBXNativeTarget "LabMealTracker" */;
+			buildPhases = (
+				A343B1982D7A089F0029EFA4 /* Sources */,
+				A343B1992D7A089F0029EFA4 /* Frameworks */,
+				A343B19A2D7A089F0029EFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A343B19E2D7A089F0029EFA4 /* LabMealTracker */,
+			);
+			name = LabMealTracker;
+			packageProductDependencies = (
+			);
+			productName = LabMealTracker;
+			productReference = A343B19C2D7A089F0029EFA4 /* LabMealTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A343B1B12D7A08A00029EFA4 /* LabMealTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A343B1CA2D7A08A00029EFA4 /* Build configuration list for PBXNativeTarget "LabMealTrackerTests" */;
+			buildPhases = (
+				A343B1AE2D7A08A00029EFA4 /* Sources */,
+				A343B1AF2D7A08A00029EFA4 /* Frameworks */,
+				A343B1B02D7A08A00029EFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A343B1B42D7A08A00029EFA4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A343B1B52D7A08A00029EFA4 /* LabMealTrackerTests */,
+			);
+			name = LabMealTrackerTests;
+			packageProductDependencies = (
+			);
+			productName = LabMealTrackerTests;
+			productReference = A343B1B22D7A08A00029EFA4 /* LabMealTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A343B1BB2D7A08A00029EFA4 /* LabMealTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A343B1CD2D7A08A00029EFA4 /* Build configuration list for PBXNativeTarget "LabMealTrackerUITests" */;
+			buildPhases = (
+				A343B1B82D7A08A00029EFA4 /* Sources */,
+				A343B1B92D7A08A00029EFA4 /* Frameworks */,
+				A343B1BA2D7A08A00029EFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A343B1BE2D7A08A00029EFA4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A343B1BF2D7A08A00029EFA4 /* LabMealTrackerUITests */,
+			);
+			name = LabMealTrackerUITests;
+			packageProductDependencies = (
+			);
+			productName = LabMealTrackerUITests;
+			productReference = A343B1BC2D7A08A00029EFA4 /* LabMealTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A343B1942D7A089F0029EFA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A343B19B2D7A089F0029EFA4 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A343B1B12D7A08A00029EFA4 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A343B19B2D7A089F0029EFA4;
+					};
+					A343B1BB2D7A08A00029EFA4 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A343B19B2D7A089F0029EFA4;
+					};
+				};
+			};
+			buildConfigurationList = A343B1972D7A089F0029EFA4 /* Build configuration list for PBXProject "LabMealTracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A343B1932D7A089F0029EFA4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A343B19D2D7A089F0029EFA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A343B19B2D7A089F0029EFA4 /* LabMealTracker */,
+				A343B1B12D7A08A00029EFA4 /* LabMealTrackerTests */,
+				A343B1BB2D7A08A00029EFA4 /* LabMealTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A343B19A2D7A089F0029EFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A343B1B02D7A08A00029EFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A343B1BA2D7A08A00029EFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A343B1982D7A089F0029EFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A343B1AE2D7A08A00029EFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A343B1B82D7A08A00029EFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A343B1B42D7A08A00029EFA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A343B19B2D7A089F0029EFA4 /* LabMealTracker */;
+			targetProxy = A343B1B32D7A08A00029EFA4 /* PBXContainerItemProxy */;
+		};
+		A343B1BE2D7A08A00029EFA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A343B19B2D7A089F0029EFA4 /* LabMealTracker */;
+			targetProxy = A343B1BD2D7A08A00029EFA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A343B1C62D7A08A00029EFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVQQ7XF639;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LabMealTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = COM.SC.LabMealTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A343B1C72D7A08A00029EFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVQQ7XF639;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LabMealTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = COM.SC.LabMealTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A343B1C82D7A08A00029EFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A343B1C92D7A08A00029EFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A343B1CB2D7A08A00029EFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVQQ7XF639;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = COM.SC.LabMealTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LabMealTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LabMealTracker";
+			};
+			name = Debug;
+		};
+		A343B1CC2D7A08A00029EFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVQQ7XF639;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = COM.SC.LabMealTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LabMealTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LabMealTracker";
+			};
+			name = Release;
+		};
+		A343B1CE2D7A08A00029EFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVQQ7XF639;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = COM.SC.LabMealTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LabMealTracker;
+			};
+			name = Debug;
+		};
+		A343B1CF2D7A08A00029EFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVQQ7XF639;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = COM.SC.LabMealTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LabMealTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A343B1972D7A089F0029EFA4 /* Build configuration list for PBXProject "LabMealTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A343B1C82D7A08A00029EFA4 /* Debug */,
+				A343B1C92D7A08A00029EFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A343B1C52D7A08A00029EFA4 /* Build configuration list for PBXNativeTarget "LabMealTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A343B1C62D7A08A00029EFA4 /* Debug */,
+				A343B1C72D7A08A00029EFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A343B1CA2D7A08A00029EFA4 /* Build configuration list for PBXNativeTarget "LabMealTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A343B1CB2D7A08A00029EFA4 /* Debug */,
+				A343B1CC2D7A08A00029EFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A343B1CD2D7A08A00029EFA4 /* Build configuration list for PBXNativeTarget "LabMealTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A343B1CE2D7A08A00029EFA4 /* Debug */,
+				A343B1CF2D7A08A00029EFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A343B1942D7A089F0029EFA4 /* Project object */;
+}

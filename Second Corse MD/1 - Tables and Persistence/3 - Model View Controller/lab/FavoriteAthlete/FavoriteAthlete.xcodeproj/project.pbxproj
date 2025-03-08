@@ -13,6 +13,8 @@
 		1830B16F23A3064300FF29B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1830B16E23A3064300FF29B5 /* Assets.xcassets */; };
 		1830B17223A3064300FF29B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1830B17023A3064300FF29B5 /* LaunchScreen.storyboard */; };
 		1830B17A23A3067E00FF29B5 /* AthleteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830B17923A3067E00FF29B5 /* AthleteTableViewController.swift */; };
+		A3A6ABB72D764286005417AA /* AthleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6ABB62D764286005417AA /* AthleteVC.swift */; };
+		A3A6ABB92D76429D005417AA /* AthleteFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6ABB82D76429D005417AA /* AthleteFormVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1830B17123A3064300FF29B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1830B17323A3064300FF29B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1830B17923A3067E00FF29B5 /* AthleteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteTableViewController.swift; sourceTree = "<group>"; };
+		A3A6ABB62D764286005417AA /* AthleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteVC.swift; sourceTree = "<group>"; };
+		A3A6ABB82D76429D005417AA /* AthleteFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteFormVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				1830B16723A3064200FF29B5 /* SceneDelegate.swift */,
 				1830B17923A3067E00FF29B5 /* AthleteTableViewController.swift */,
 				1830B16B23A3064200FF29B5 /* Main.storyboard */,
+				A3A6ABB62D764286005417AA /* AthleteVC.swift */,
+				A3A6ABB82D76429D005417AA /* AthleteFormVC.swift */,
 				1830B16E23A3064300FF29B5 /* Assets.xcassets */,
 				1830B17023A3064300FF29B5 /* LaunchScreen.storyboard */,
 				1830B17323A3064300FF29B5 /* Info.plist */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1830B16623A3064200FF29B5 /* AppDelegate.swift in Sources */,
+				A3A6ABB72D764286005417AA /* AthleteVC.swift in Sources */,
 				1830B16823A3064200FF29B5 /* SceneDelegate.swift in Sources */,
+				A3A6ABB92D76429D005417AA /* AthleteFormVC.swift in Sources */,
 				1830B17A23A3067E00FF29B5 /* AthleteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

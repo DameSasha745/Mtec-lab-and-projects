@@ -9,9 +9,17 @@ import UIKit
  `HeartRateViewController` below is a view controller that will present the heart rate information to the user. Throughout the exercises below you'll use the delegate pattern to pass information from an instance of `HeartRateReceiver` to the view controller so that anytime new information is obtained it is presented to the user.
  */
 
+weak var delegate: HeartRateReceiverDelegate?
+func updateHeartRate(to bpm: Int) {
+    delegate?.heartRateUpdated(to: bpm)
+}
 class HeartRateReceiver {
+    var delegate: HeartRateReceiverDelegate?
     var currentHR: Int? {
         didSet {
+            if let bpm = currentHR {
+                delegate?.heartRateUpdated(to: bpm)
+            }
             if let currentHR = currentHR {
                 print("The most recent heart rate reading is \(currentHR).")
             } else {
@@ -27,13 +35,32 @@ class HeartRateReceiver {
             Thread.sleep(forTimeInterval: 2)
         }
     }
+    
+    
+    
 }
 
-class HeartRateViewController: UIViewController {
+class HeartRateViewController: UIViewController, HeartRateReceiverDelegate {
     var heartRateLabel: UILabel = UILabel()
+    
+    func heartRateUpdated(to bpm: Int) {
+            heartRateLabel.text = "Heart Rate: \(bpm)"
+            print("The user has been shown a heart rate of \(bpm).")
+        }
+    
 }
 //:  First, create an instance of `HeartRateReceiver` and call `startHeartRateMonitoringExample`. Notice that every two seconds `currentHR` get set and prints the new heart rate reading to the console.
+let heartRateReceiver = HeartRateReceiver()
+let heartRateVC = HeartRateViewController()
 
+heartRateReceiver.startHeartRateMonitoringExample()
+heartRateReceiver.delegate = heartRateVC
+
+RunLoop.main.run()
+
+protocol HeartRateReceiverDelegate: AnyObject {
+    func heartRateUpdated(to bpm: Int)
+}
 
 /*:
  In a real app, printing to the console does not show information to the user. You need a way of passing information from the `HeartRateReceiver` to the `HeartRateViewController`. To do this, create a protocol called `HeartRateReceiverDelegate` that requires a method `heartRateUpdated(to bpm:)` where `bpm` is of type `Int` and represents the new rate as _beats per minute_. Since playgrounds read from top to bottom and the two previously declared classes will need to use this protocol, you'll need to declare this protocol above the declaration of `HeartRateReceiver`.

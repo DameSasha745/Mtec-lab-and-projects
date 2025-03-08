@@ -1,7 +1,14 @@
+//
+//  BookFormTableVC.swift
+//  FavoriteBooks
+//
+//  Created by Sasha Cummings on 3/8/25.
+//
+
 import UIKit
 
-class BookFormViewController: UIViewController {
-
+class BookFormTableVC: UITableViewController {
+    
     var book: Book?
     
     @IBOutlet var titleTextField: UITextField!
@@ -36,12 +43,11 @@ class BookFormViewController: UIViewController {
     
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let title = titleTextField.text,
-            let author = authorTextField.text,
-            let genre = genreTextField.text,
-            let length = lengthTextField.text else {return}
+              let author = authorTextField.text,
+              let genre = genreTextField.text,
+              let length = lengthTextField.text else {return}
         
         book = Book(title: title, author: author, genre: genre, length: length)
         performSegue(withIdentifier: "UnwindToBookTable", sender: self)
     }
-
 }

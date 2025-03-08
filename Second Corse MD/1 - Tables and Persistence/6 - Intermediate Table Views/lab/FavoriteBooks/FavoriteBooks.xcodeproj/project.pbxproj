@@ -14,7 +14,7 @@
 		188F677623AC01B1007E2064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188F677423AC01B1007E2064 /* LaunchScreen.storyboard */; };
 		188F678023AC025B007E2064 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F677F23AC025B007E2064 /* Book.swift */; };
 		188F678223AC0292007E2064 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F678123AC0292007E2064 /* BookTableViewController.swift */; };
-		188F678423AC0394007E2064 /* BookFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F678323AC0394007E2064 /* BookFormViewController.swift */; };
+		A3B22EAB2D7CE74400712493 /* BookFormTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B22EAA2D7CE74400712493 /* BookFormTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		188F677723AC01B1007E2064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188F677F23AC025B007E2064 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		188F678123AC0292007E2064 /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
-		188F678323AC0394007E2064 /* BookFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFormViewController.swift; sourceTree = "<group>"; };
+		A3B22EAA2D7CE74400712493 /* BookFormTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFormTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +64,11 @@
 				188F676923AC01B0007E2064 /* AppDelegate.swift */,
 				188F677F23AC025B007E2064 /* Book.swift */,
 				188F678123AC0292007E2064 /* BookTableViewController.swift */,
-				188F678323AC0394007E2064 /* BookFormViewController.swift */,
 				188F676B23AC01B0007E2064 /* SceneDelegate.swift */,
 				188F677223AC01B1007E2064 /* Assets.xcassets */,
 				188F677423AC01B1007E2064 /* LaunchScreen.storyboard */,
 				188F676F23AC01B0007E2064 /* Main.storyboard */,
+				A3B22EAA2D7CE74400712493 /* BookFormTableVC.swift */,
 			);
 			path = FavoriteBooks;
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 188F676123AC01B0007E2064 /* Build configuration list for PBXProject "FavoriteBooks" */;
+			buildConfigurationList = 188F676123AC01B0007E2064 /* Build configuration list for PBXProject "TestFavoriteBooks" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,8 +146,8 @@
 			files = (
 				188F678023AC025B007E2064 /* Book.swift in Sources */,
 				188F676A23AC01B0007E2064 /* AppDelegate.swift in Sources */,
+				A3B22EAB2D7CE74400712493 /* BookFormTableVC.swift in Sources */,
 				188F678223AC0292007E2064 /* BookTableViewController.swift in Sources */,
-				188F678423AC0394007E2064 /* BookFormViewController.swift in Sources */,
 				188F676C23AC01B0007E2064 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVQQ7XF639;
 				INFOPLIST_FILE = FavoriteBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVQQ7XF639;
 				INFOPLIST_FILE = FavoriteBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -331,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		188F676123AC01B0007E2064 /* Build configuration list for PBXProject "FavoriteBooks" */ = {
+		188F676123AC01B0007E2064 /* Build configuration list for PBXProject "TestFavoriteBooks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				188F677823AC01B1007E2064 /* Debug */,
