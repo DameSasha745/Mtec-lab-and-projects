@@ -7,15 +7,10 @@ class EmployeeListTableViewController: UITableViewController, EmployeeDetailTabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-        
-    // MARK: - Table view data source
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return employees.count
     }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmployeeCell", for: indexPath)
         
@@ -28,17 +23,12 @@ class EmployeeListTableViewController: UITableViewController, EmployeeDetailTabl
         
         return cell
     }
-    
-    // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             employees.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-    
-    // MARK: - Navigation
-    
     @IBSegueAction func showEmployeeDetail(_ coder: NSCoder, sender: Any?) -> EmployeeDetailTableViewController? {
         
         let detailViewController = EmployeeDetailTableViewController(coder: coder)
@@ -56,14 +46,10 @@ class EmployeeListTableViewController: UITableViewController, EmployeeDetailTabl
         
         return detailViewController
     }
-    
     @IBAction func unwindToEmployeeList(segue: UIStoryboardSegue) {
         tableView.reloadData()
     }
-    
-    // MARK: - EmployeeDetailTableViewControllerDelegate
-    
-    func employeeDetailTableViewController(_ controller: EmployeeDetailTableViewController, didSave employee: Employee) {
+    func employeeDetailTableViewController(_ controller: EmployeeDetailTableViewController, didSelect employee: Employee) {
         
         if let indexPath = tableView.indexPathForSelectedRow {
             employees.remove(at: indexPath.row)
@@ -76,4 +62,3 @@ class EmployeeListTableViewController: UITableViewController, EmployeeDetailTabl
         dismiss(animated: true, completion: nil)
     }
 }
-

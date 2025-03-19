@@ -2,24 +2,19 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
     
-    var emojis: [Emoji] = [
-        Emoji(symbol: "😀", name: "Grinning Face", description: "A typical smiley face.", usage: "happiness"),
-        Emoji(symbol: "😕", name: "Confused Face", description: "A confused, puzzled face.", usage: "unsure what to think; displeasure"),
-        Emoji(symbol: "😍", name: "Heart Eyes", description: "A smiley face with hearts for eyes.", usage: "love of something; attractive"),
-        Emoji(symbol: "🧑‍💻", name: "Developer", description: "A person working on a MacBook (probably using Xcode to write iOS apps in Swift).", usage: "apps, software, programming"),
-        Emoji(symbol: "🐢", name: "Turtle", description: "A cute turtle.", usage: "Something slow"),
-        Emoji(symbol: "🐘", name: "Elephant", description: "A gray elephant.", usage: "good memory"),
-        Emoji(symbol: "🍝", name: "Spaghetti", description: "A plate of spaghetti.", usage: "spaghetti"),
-        Emoji(symbol: "🎲", name: "Die", description: "A single die.", usage: "taking a risk, chance; game"),
-        Emoji(symbol: "⛺️", name: "Tent", description: "A small tent.", usage: "camping"),
-        Emoji(symbol: "📚", name: "Stack of Books", description: "Three colored books stacked on each other.", usage: "homework, studying"),
-        Emoji(symbol: "💔", name: "Broken Heart", description: "A red, broken heart.", usage: "extreme sadness"),
-        Emoji(symbol: "💤", name: "Snore", description: "Three blue \'z\'s.", usage: "tired, sleepiness"),
-        Emoji(symbol: "🏁", name: "Checkered Flag", description: "A black-and-white checkered flag.", usage: "completion")
-    ]
-
+    var emojis: [Emoji] = [] {
+        didSet {
+            saveToFile(emojis: emojis)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let savedEmojis = Emoji.loadFromFile() {
+            emojis = savedEmojis
+        } else {
+        emojis = Emoji.sampleEmojis()
+    }
         
         navigationItem.leftBarButtonItem = editButtonItem
         tableView.rowHeight = UITableView.automaticDimension
@@ -41,7 +36,8 @@ class EmojiTableViewController: UITableViewController {
             // Adding Emoji
             return AddEditEmojiTableViewController(coder: coder, emoji: nil)
         }
-    }
+        
+}
     
     @IBAction func unwindToEmojiTableView(segue: UIStoryboardSegue) {
         guard segue.identifier == "saveUnwind",
@@ -92,7 +88,7 @@ class EmojiTableViewController: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             emojis.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
@@ -108,5 +104,12 @@ class EmojiTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
     }
-
+    func saveToFile(emojis: [Emoji]) {
+        let encoder = PropertyListEncoder()
+        
+        do {
+            let encodedEmojis = try? encoder.encode(emojis)
+            try? encodedEmojis?.write(to: Emoji.archiveURL)
+        }
+    }
 }

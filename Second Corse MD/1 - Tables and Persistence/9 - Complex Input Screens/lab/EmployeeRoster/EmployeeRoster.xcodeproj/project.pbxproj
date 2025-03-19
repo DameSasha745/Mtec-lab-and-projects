@@ -15,6 +15,7 @@
 		18DE987623C405490071ACD3 /* EmployeeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE987523C405490071ACD3 /* EmployeeListTableViewController.swift */; };
 		18DE987823C405550071ACD3 /* EmployeeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE987723C405540071ACD3 /* EmployeeDetailTableViewController.swift */; };
 		18DE987A23C406260071ACD3 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE987923C406260071ACD3 /* Employee.swift */; };
+		A3456E622D89F7720051E990 /* EmployeeTypeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3456E612D89F7720051E990 /* EmployeeTypeTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		18DE987523C405490071ACD3 /* EmployeeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListTableViewController.swift; sourceTree = "<group>"; };
 		18DE987723C405540071ACD3 /* EmployeeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailTableViewController.swift; sourceTree = "<group>"; };
 		18DE987923C406260071ACD3 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		A3456E612D89F7720051E990 /* EmployeeTypeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTypeTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				18DE987923C406260071ACD3 /* Employee.swift */,
 				18DE987723C405540071ACD3 /* EmployeeDetailTableViewController.swift */,
 				18DE987523C405490071ACD3 /* EmployeeListTableViewController.swift */,
+				A3456E612D89F7720051E990 /* EmployeeTypeTVC.swift */,
 				18DE986323C405060071ACD3 /* SceneDelegate.swift */,
 				18DE986A23C405070071ACD3 /* Assets.xcassets */,
 				18DE986C23C405070071ACD3 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				18DE986423C405060071ACD3 /* SceneDelegate.swift in Sources */,
 				18DE987A23C406260071ACD3 /* Employee.swift in Sources */,
 				18DE987623C405490071ACD3 /* EmployeeListTableViewController.swift in Sources */,
+				A3456E622D89F7720051E990 /* EmployeeTypeTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

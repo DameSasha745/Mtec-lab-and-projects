@@ -15,6 +15,7 @@
 		188F678023AC025B007E2064 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F677F23AC025B007E2064 /* Book.swift */; };
 		188F678223AC0292007E2064 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F678123AC0292007E2064 /* BookTableViewController.swift */; };
 		A3B22EAB2D7CE74400712493 /* BookFormTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B22EAA2D7CE74400712493 /* BookFormTableVC.swift */; };
+		A3D366882D7F41B500EC1BAC /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D366872D7F41B500EC1BAC /* BookTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		188F677F23AC025B007E2064 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		188F678123AC0292007E2064 /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 		A3B22EAA2D7CE74400712493 /* BookFormTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFormTableVC.swift; sourceTree = "<group>"; };
+		A3D366872D7F41B500EC1BAC /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				188F677223AC01B1007E2064 /* Assets.xcassets */,
 				188F677423AC01B1007E2064 /* LaunchScreen.storyboard */,
 				188F676F23AC01B0007E2064 /* Main.storyboard */,
+				A3D366872D7F41B500EC1BAC /* BookTableViewCell.swift */,
 				A3B22EAA2D7CE74400712493 /* BookFormTableVC.swift */,
 			);
 			path = FavoriteBooks;
@@ -108,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 188F676123AC01B0007E2064 /* Build configuration list for PBXProject "TestFavoriteBooks" */;
+			buildConfigurationList = 188F676123AC01B0007E2064 /* Build configuration list for PBXProject "FavoriteBooks" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -148,6 +151,7 @@
 				188F676A23AC01B0007E2064 /* AppDelegate.swift in Sources */,
 				A3B22EAB2D7CE74400712493 /* BookFormTableVC.swift in Sources */,
 				188F678223AC0292007E2064 /* BookTableViewController.swift in Sources */,
+				A3D366882D7F41B500EC1BAC /* BookTableViewCell.swift in Sources */,
 				188F676C23AC01B0007E2064 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		188F676123AC01B0007E2064 /* Build configuration list for PBXProject "TestFavoriteBooks" */ = {
+		188F676123AC01B0007E2064 /* Build configuration list for PBXProject "FavoriteBooks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				188F677823AC01B1007E2064 /* Debug */,
